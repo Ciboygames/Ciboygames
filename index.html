@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <title>CiboyGames</title>
+</head>
+<body>
+    <header>
+        <div class="logo">CiboyGames</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#temporada">Juegos de Temporada</a></li>
+                <!-- Agrega más enlaces según sea necesario -->
+            </ul>
+        </nav>
+        <div class="search-container">
+            <label for="search">Buscar por nombre o etiquetas:</label>
+            <input type="text" id="search" oninput="searchGames()">
+        </div>
+    </header>
+
+    <div class="content">
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <!-- Contenido de la sección de inicio -->
+        </section>
+
+        <section id="temporada" class="temporada-section">
+            <h2>Recientes</h2>
+            <div id="seasonalGames">
+                <div class="game">
+                    <a href="Warband.html">
+                        <img src="C:\Users\COMPAQ\Desktop\Ciboygames\Media\Game Images/Mount And Blade Warband.jpg" alt="Mount And Blade Warband">
+                    </a>
+                </div>
+                <div class="game">
+                    <a href="juego2.html">
+                        <img src="C:\Users\COMPAQ\Desktop\Ciboygames\Media\Game Images/Hitman Saga.jpg" alt="HITMAN:Hitman Codename 47 
+                        Hitman 2: Silent Assassin Hitman Contracts ">
+                    </a>
+                </div>
+                <!-- Agrega más juegos según sea necesario -->
+            </div>
+        </section>
+
+        <section id="busqueda" style="display: none;">
+            <h2>Resultados de la Búsqueda</h2>
+            <div id="searchResults"></div>
+        </section>
+    </div>
+
+    <footer>
+        <hr class="linea-derechos">
+        <p class="footer-text">Derechos Reservados &copy; 2024 CyboyGames</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
